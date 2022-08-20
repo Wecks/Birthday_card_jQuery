@@ -12,21 +12,21 @@ $(function () {
         $(".nextItem").css("background-color", "#4CFF9B")
         $(this).remove();
 
-        $(".nextItem").one('click', function (e) {
+        $("#1").one('click', function (e) {
             e.preventDefault();
             $items.append('<li class="nextItem" id="2">'
                 + "Today your's birthday !"
                 + '</li>');
             $("#2").css("background-color", "#EAEA61");
 
-            $(".nextItem").one('click', function (e) {
+            $("#2").one('click', function (e) {
                 e.preventDefault();
                 $items.append('<li class="nextItem" id="3">'
                     + "Wishing you all the best !"
                     + '</li>');
                 $("#3").css("background-color", "#FA7EF5");
 
-                $(".nextItem").one('click', function (e) {
+                $("#3").one('click', function (e) {
                     e.preventDefault();
                     $("#1").text("Happy Birthday !");
                     $("#2").text("Happy Birthday !");
